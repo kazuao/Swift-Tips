@@ -45,12 +45,6 @@ extension String {
 extension View {
     @ViewBuilder
     func redacted(if condition: @autoclosure() -> Bool) -> some View {
-        return redacted(reason: condition() ? .placeholder : [])
-    }
-}
-
-struct PlaceholderView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlaceholderView()
+        redacted(reason: condition() ? .placeholder : [])
     }
 }
