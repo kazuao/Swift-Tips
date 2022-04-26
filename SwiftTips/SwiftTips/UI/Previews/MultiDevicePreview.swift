@@ -10,20 +10,25 @@ import SwiftUI
 struct MultiDevicePreview<Content>: View where Content: View {
 
     let content: () -> Content
+    
+    private struct devices: Identifiable {
+        let id = UUID()
+        let device: PreviewDevice
+    }
 
-    private var multiDevices: [PreviewDevice] {
+    private var multiDevices: [devices] {
         return [
-            .init(rawValue: "iPhone 13 mini"),
-            .init(rawValue: "iPhone 13 Pro Max"),
-            .init(rawValue: "iPad mini (6th generation)"),
-            .init(rawValue: "iPad Pro (12.9-inch) (5th generation)"),
+            .init(device: .init(rawValue: "iPhone 13 mini")),
+            .init(device: .init(rawValue: "iPhone 13 Pro Max")),
+            .init(device: .init(rawValue: "iPad mini (6th generation)")),
+            .init(device: .init(rawValue: "iPad Pro (12.9-inch) (5th generation)")),
         ]
     }
     
     var body: some View {
-        ForEach(multiDevices, id: \.self) { device in
+        ForEach(multiDevices, id: \.id) { device in
             content()
-                .previewDevice(device)
+                .previewDevice(device.device)
         }
     }
 }
