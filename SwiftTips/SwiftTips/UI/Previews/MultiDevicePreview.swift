@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+enum Device: String, CaseIterable {
+    case iPhone8 = "iPhone 8"
+    case iPhone13Mini = "iPhone 13 mini"
+    case iPhone13ProMax = "iPhone 13 Pro Max"
+    case iPadMini = "iPad mini (6th generation)"
+    case iPadPro12 = "iPad Pro (12.9-inch) (5th generation)"
+}
+
 struct MultiDevicePreview<Content>: View where Content: View {
 
     let content: () -> Content
@@ -18,10 +26,10 @@ struct MultiDevicePreview<Content>: View where Content: View {
 
     private var multiDevices: [devices] {
         return [
-            .init(device: .init(rawValue: "iPhone 13 mini")),
-            .init(device: .init(rawValue: "iPhone 13 Pro Max")),
-            .init(device: .init(rawValue: "iPad mini (6th generation)")),
-            .init(device: .init(rawValue: "iPad Pro (12.9-inch) (5th generation)")),
+            .init(device: .init(rawValue: Device.iPhone13Mini.rawValue)),
+            .init(device: .init(rawValue: Device.iPhone13ProMax.rawValue)),
+            .init(device: .init(rawValue: Device.iPadMini.rawValue)),
+            .init(device: .init(rawValue: Device.iPadPro12.rawValue)),
         ]
     }
     
