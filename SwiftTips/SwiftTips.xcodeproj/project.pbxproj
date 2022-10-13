@@ -49,6 +49,7 @@
 		0E8218E527BDC539008EFA9E /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8218E427BDC539008EFA9E /* PlaceholderView.swift */; };
 		0E8218E727BDCAC4008EFA9E /* CustomAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8218E627BDCAC3008EFA9E /* CustomAlignmentView.swift */; };
 		0E9174872887B81F00F52D44 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9174862887B81F00F52D44 /* ButtonExtension.swift */; };
+		0E9931BD28E58B5500F749AD /* ExclusiveNegativeNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9931BC28E58B5500F749AD /* ExclusiveNegativeNumberView.swift */; };
 		0EA9ED1B2888DE89001F6D57 /* SortedKeyPathComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9ED1A2888DE89001F6D57 /* SortedKeyPathComparator.swift */; };
 		0ED5ABEA28AB12E000AE8E7D /* SearchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5ABE928AB12E000AE8E7D /* SearchableView.swift */; };
 		0EDD395E282A1EEE00C7D74A /* StateViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD395D282A1EEE00C7D74A /* StateViewModifier.swift */; };
@@ -106,6 +107,7 @@
 		0E8218E427BDC539008EFA9E /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		0E8218E627BDCAC3008EFA9E /* CustomAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentView.swift; sourceTree = "<group>"; };
 		0E9174862887B81F00F52D44 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		0E9931BC28E58B5500F749AD /* ExclusiveNegativeNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusiveNegativeNumberView.swift; sourceTree = "<group>"; };
 		0EA9ED1A2888DE89001F6D57 /* SortedKeyPathComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedKeyPathComparator.swift; sourceTree = "<group>"; };
 		0ED5ABE928AB12E000AE8E7D /* SearchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableView.swift; sourceTree = "<group>"; };
 		0EDD395D282A1EEE00C7D74A /* StateViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModifier.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		0E48C7D328176F8D00EFB0E6 /* TIps */ = {
 			isa = PBXGroup;
 			children = (
+				0E9931BB28E58B3E00F749AD /* ExcusionNegativeNumber */,
 				0E48C7D428176FA000EFB0E6 /* ComputedVariableView.swift */,
 				0E48C7D62817725400EFB0E6 /* MyToolBarView.swift */,
 				0EFEC40228177A2400FE574F /* ExtractingLogicView.swift */,
@@ -344,6 +347,14 @@
 				0E9174862887B81F00F52D44 /* ButtonExtension.swift */,
 			);
 			path = ButtonExtension;
+			sourceTree = "<group>";
+		};
+		0E9931BB28E58B3E00F749AD /* ExcusionNegativeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				0E9931BC28E58B5500F749AD /* ExclusiveNegativeNumberView.swift */,
+			);
+			path = ExcusionNegativeNumber;
 			sourceTree = "<group>";
 		};
 		0EA9ED192888DE6C001F6D57 /* Sort */ = {
@@ -501,6 +512,7 @@
 				0E48C7D528176FA000EFB0E6 /* ComputedVariableView.swift in Sources */,
 				0E3CA9C127FAED760022AC16 /* TabsView.swift in Sources */,
 				0E9174872887B81F00F52D44 /* ButtonExtension.swift in Sources */,
+				0E9931BD28E58B5500F749AD /* ExclusiveNegativeNumberView.swift in Sources */,
 				0E6B135028B06E1D0016ADC0 /* Tracker.swift in Sources */,
 				0E8218E527BDC539008EFA9E /* PlaceholderView.swift in Sources */,
 				0E48C7CA28156BBF00EFB0E6 /* PreviewExampleView.swift in Sources */,
