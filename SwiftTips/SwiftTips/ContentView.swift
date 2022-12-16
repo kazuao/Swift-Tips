@@ -14,6 +14,7 @@ struct ContentView: View {
 #endif
 
     var body: some View {
+
         Text("Hello, hot reload!")
             .padding()
             .eraseToAnyView()

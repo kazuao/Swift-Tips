@@ -17,6 +17,8 @@ struct ExclusiveNegativeNumberView: View {
                 .font(.largeTitle)
 
             TextField("", text: $text)
+//            TextField("", text: $text, axis: .vertical) // 入力上限を突破したら、縦に行が増える
+//                .lineLimit(2...4) // 初期が2行、最大4行まで
                 .frame(height: 44)
                 .background(.cyan)
                 .onSubmit {
