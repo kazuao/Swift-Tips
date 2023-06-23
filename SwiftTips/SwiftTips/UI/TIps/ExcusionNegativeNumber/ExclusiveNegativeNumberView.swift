@@ -35,7 +35,7 @@ struct ExclusiveNegativeNumberView: View {
             do {
                 noneNegativeInt = try .init(int)
             } catch {
-                print("Error: ", error.localizedDescription)
+                Swift.print("Error: ", error.localizedDescription)
             }
         }
     }

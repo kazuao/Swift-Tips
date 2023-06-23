@@ -112,6 +112,45 @@ extension View {
     }
 }
 
+// MARK: +Debug
+extension View {
+
+    /*
+     Text("\(number)")
+        .debug {
+            print("number: \(number)")
+        }
+     */
+    func debug(_ handler: () -> Void) -> Self {
+        handler()
+        return self
+    }
+
+    /*
+     Text("\(number)")
+        .print("number: \(number)")
+     */
+    func print(_ target: Any) -> Self {
+        debug {
+            Swift.print(target)
+        }
+    }
+
+    /*
+     @State var number: Int = 42
+
+     var body: some View {
+         Text("\(number)")
+             .printOnChange("number: ") { number } // 💡 Print "number: 42" when `number is changed.
+     }
+     */
+    func printOnChange<Value: Equatable>(_ label: String = "", value: () -> Value) -> some View {
+        onChange(of: value()) {
+            Swift.print("\(label)\($0)")
+        }
+    }
+}
+
 private struct BoundsKey: PreferenceKey {
     static var defaultValue: Anchor<CGRect>?
 
