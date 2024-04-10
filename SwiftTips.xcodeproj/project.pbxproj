@@ -103,6 +103,7 @@
 		0EFEC47C281A5F7000FE574F /* FullScreenCoverContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC47B281A5F7000FE574F /* FullScreenCoverContext.swift */; };
 		0EFEC47F281A64C500FE574F /* UIKitLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC47E281A64C500FE574F /* UIKitLifecycle.swift */; };
 		0EFEC481281A66EE00FE574F /* UIKitLifecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC480281A66EE00FE574F /* UIKitLifecycleView.swift */; };
+		417A16E42BBE7FCD000D256E /* SecureScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +217,7 @@
 		0EFEC47B281A5F7000FE574F /* FullScreenCoverContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverContext.swift; sourceTree = "<group>"; };
 		0EFEC47E281A64C500FE574F /* UIKitLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLifecycle.swift; sourceTree = "<group>"; };
 		0EFEC480281A66EE00FE574F /* UIKitLifecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLifecycleView.swift; sourceTree = "<group>"; };
+		417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureScreenShotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -576,6 +578,7 @@
 		0E8218DF27BC8B2D008EFA9E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				417A16E22BBE7FA5000D256E /* SecureScreenShot */,
 				0EC5F99A2A3965A6004CA9AB /* TruncatedText */,
 				0E73282229DEC65800672B9B /* HideAnimation */,
 				0E891A3D29B81F8C0058B69E /* CustomTable */,
@@ -822,6 +825,14 @@
 			path = UIKitLifecycle;
 			sourceTree = "<group>";
 		};
+		417A16E22BBE7FA5000D256E /* SecureScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */,
+			);
+			path = SecureScreenShot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -966,6 +977,7 @@
 				0EFEC481281A66EE00FE574F /* UIKitLifecycleView.swift in Sources */,
 				0E74AC5128617F6A00EE4494 /* DebugPrinter.swift in Sources */,
 				0E99C37729401DEA00E1D3AB /* CustomFormatStyleView.swift in Sources */,
+				417A16E42BBE7FCD000D256E /* SecureScreenShotView.swift in Sources */,
 				0E8218E127BC8B39008EFA9E /* Buttons.swift in Sources */,
 				0E27FE1329263672001A755D /* SafeAreaInsetView.swift in Sources */,
 				0E46E216281FCB90005D98C6 /* POOViewModel.swift in Sources */,
