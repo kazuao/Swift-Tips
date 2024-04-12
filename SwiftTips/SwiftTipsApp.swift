@@ -21,7 +21,7 @@ struct SwiftTipsApp: App {
                             // アプリの状態を変更する
                     }
                 }
-                .onChange(of: scenePhase) { newScenePhase in
+                .onChange(of: scenePhase) { _, newScenePhase in
                     switch newScenePhase {
                     case .active:
                         print("App is active")

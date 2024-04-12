@@ -103,6 +103,8 @@
 		0EFEC47C281A5F7000FE574F /* FullScreenCoverContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC47B281A5F7000FE574F /* FullScreenCoverContext.swift */; };
 		0EFEC47F281A64C500FE574F /* UIKitLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC47E281A64C500FE574F /* UIKitLifecycle.swift */; };
 		0EFEC481281A66EE00FE574F /* UIKitLifecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEC480281A66EE00FE574F /* UIKitLifecycleView.swift */; };
+		414BAA4F2BC8C00B002FFBFF /* AsyncButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BAA4E2BC8C00B002FFBFF /* AsyncButtonView.swift */; };
+		414BAA512BC8C367002FFBFF /* Bool+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BAA502BC8C367002FFBFF /* Bool+.swift */; };
 		417A16E42BBE7FCD000D256E /* SecureScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */; };
 /* End PBXBuildFile section */
 
@@ -217,6 +219,8 @@
 		0EFEC47B281A5F7000FE574F /* FullScreenCoverContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverContext.swift; sourceTree = "<group>"; };
 		0EFEC47E281A64C500FE574F /* UIKitLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLifecycle.swift; sourceTree = "<group>"; };
 		0EFEC480281A66EE00FE574F /* UIKitLifecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLifecycleView.swift; sourceTree = "<group>"; };
+		414BAA4E2BC8C00B002FFBFF /* AsyncButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButtonView.swift; sourceTree = "<group>"; };
+		414BAA502BC8C367002FFBFF /* Bool+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+.swift"; sourceTree = "<group>"; };
 		417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureScreenShotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +419,7 @@
 				0E5462D8294C3A8900B4BE22 /* View+.swift */,
 				0E748861294C527C0000EFF9 /* Binding+.swift */,
 				0E5462DA294C3AB100B4BE22 /* UIApplication+.swift */,
+				414BAA502BC8C367002FFBFF /* Bool+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 		0E8218DF27BC8B2D008EFA9E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				414BAA4D2BC8C001002FFBFF /* AsyncButton */,
 				417A16E22BBE7FA5000D256E /* SecureScreenShot */,
 				0EC5F99A2A3965A6004CA9AB /* TruncatedText */,
 				0E73282229DEC65800672B9B /* HideAnimation */,
@@ -825,6 +831,14 @@
 			path = UIKitLifecycle;
 			sourceTree = "<group>";
 		};
+		414BAA4D2BC8C001002FFBFF /* AsyncButton */ = {
+			isa = PBXGroup;
+			children = (
+				414BAA4E2BC8C00B002FFBFF /* AsyncButtonView.swift */,
+			);
+			path = AsyncButton;
+			sourceTree = "<group>";
+		};
 		417A16E22BBE7FA5000D256E /* SecureScreenShot */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,7 +895,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					0E14B450293ED36600E37AA5 = {
 						CreatedOnToolsVersion = 14.1;
@@ -961,6 +975,7 @@
 				0EDF326C293D758500912F6E /* CustomEnvironmentKeys.swift in Sources */,
 				0E8A254529B9B8A900306FFC /* ScrollViewWithDismissKeyboard.swift in Sources */,
 				0E8990DB2921FEDA0080A802 /* RedactedModifierView.swift in Sources */,
+				414BAA4F2BC8C00B002FFBFF /* AsyncButtonView.swift in Sources */,
 				0E48C7D028156DAD00EFB0E6 /* OrientedPreviews.swift in Sources */,
 				0EFEC47A281A5EFB00FE574F /* FullScreenCoverContextFocusedValueKey.swift in Sources */,
 				0E4E6974295C0B5F006EE470 /* EmptyLink.swift in Sources */,
@@ -1019,6 +1034,7 @@
 				0E8218E527BDC539008EFA9E /* PlaceholderView.swift in Sources */,
 				0E5462D9294C3A8900B4BE22 /* View+.swift in Sources */,
 				0E891A3F29B81F9D0058B69E /* CustomTableView.swift in Sources */,
+				414BAA512BC8C367002FFBFF /* Bool+.swift in Sources */,
 				0E48C7CA28156BBF00EFB0E6 /* PreviewExampleView.swift in Sources */,
 				0E8990E3292202050080A802 /* ProjectionTransformModifierView.swift in Sources */,
 				0E8A254B29B9BD9300306FFC /* RequestReviewView.swift in Sources */,
@@ -1130,6 +1146,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1191,6 +1208,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1226,7 +1244,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1261,7 +1279,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

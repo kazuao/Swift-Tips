@@ -25,7 +25,7 @@ struct FileExporterView: View {
             case .success(_):
                 Swift.print("Saved success:")
             case .failure(let failure):
-                print(failure)
+                let _ = print(failure)
             }
         }
     }

@@ -145,8 +145,8 @@ extension View {
      }
      */
     func printOnChange<Value: Equatable>(_ label: String = "", value: () -> Value) -> some View {
-        onChange(of: value()) {
-            Swift.print("\(label)\($0)")
+        onChange(of: value()) { _, newValue in
+            Swift.print("\(label)\(newValue)")
         }
     }
 }

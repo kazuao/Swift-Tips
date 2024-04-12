@@ -14,7 +14,7 @@ extension Binding {
             set: { wrappedValue = set($0) }
         )
     }
-
+    
     /*
      Binding<T?> -> Binding<Bool>
      */
@@ -28,7 +28,7 @@ extension Binding {
             }
         )
     }
-
+    
     /*
      Binding<T?> -> Binding<T>?
      */
@@ -40,5 +40,3 @@ extension Binding {
         }
     }
 }
-
-

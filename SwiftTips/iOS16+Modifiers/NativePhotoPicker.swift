@@ -49,7 +49,7 @@ struct NativePhotoPicker: View {
             .navigationTitle("Native Video Picker")
             .padding()
             .photosPicker(isPresented: $showVideoPicker, selection: $selectedItem, matching: .videos)
-            .onChange(of: selectedItem) { newValue in
+            .onChange(of: selectedItem) { _, newValue in
                 if let newValue {
                     Task {
                         do {

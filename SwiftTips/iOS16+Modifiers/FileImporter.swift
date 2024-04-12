@@ -21,9 +21,9 @@ struct FileImporter: View {
             switch result {
             case .success(let url):
                 fileURL = url.absoluteURL
-                print(fileURL)
+                let _ = print(fileURL ?? "")
             case .failure(let failure):
-                print(failure.localizedDescription)
+                let _ = print(failure.localizedDescription)
             }
         }
         .quickLookPreview($fileURL)

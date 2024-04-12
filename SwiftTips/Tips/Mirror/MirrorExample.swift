@@ -71,6 +71,7 @@ func testNormalizeStrings() {
     mirror.children.forEach { child in
         if let value = child.value as? String {
 //            XCTAssertEqual(value, "xyz")
+            let _ = print(value)
         }
     }
 }
