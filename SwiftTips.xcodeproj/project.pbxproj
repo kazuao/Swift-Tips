@@ -106,6 +106,7 @@
 		414BAA4F2BC8C00B002FFBFF /* AsyncButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BAA4E2BC8C00B002FFBFF /* AsyncButtonView.swift */; };
 		414BAA512BC8C367002FFBFF /* Bool+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BAA502BC8C367002FFBFF /* Bool+.swift */; };
 		417A16E42BBE7FCD000D256E /* SecureScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */; };
+		41B04BE82BDA5401003F9960 /* PopToRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B04BE72BDA5401003F9960 /* PopToRootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,7 @@
 		414BAA4E2BC8C00B002FFBFF /* AsyncButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButtonView.swift; sourceTree = "<group>"; };
 		414BAA502BC8C367002FFBFF /* Bool+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+.swift"; sourceTree = "<group>"; };
 		417A16E32BBE7FCD000D256E /* SecureScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureScreenShotView.swift; sourceTree = "<group>"; };
+		41B04BE72BDA5401003F9960 /* PopToRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -583,6 +585,7 @@
 		0E8218DF27BC8B2D008EFA9E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				41B04BE62BDA53F3003F9960 /* PopToRootView */,
 				414BAA4D2BC8C001002FFBFF /* AsyncButton */,
 				417A16E22BBE7FA5000D256E /* SecureScreenShot */,
 				0EC5F99A2A3965A6004CA9AB /* TruncatedText */,
@@ -847,6 +850,14 @@
 			path = SecureScreenShot;
 			sourceTree = "<group>";
 		};
+		41B04BE62BDA53F3003F9960 /* PopToRootView */ = {
+			isa = PBXGroup;
+			children = (
+				41B04BE72BDA5401003F9960 /* PopToRootView.swift */,
+			);
+			path = PopToRootView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -991,6 +1002,7 @@
 				0E14B478293EE25900E37AA5 /* ComparingLifecycleManagementView.swift in Sources */,
 				0EFEC481281A66EE00FE574F /* UIKitLifecycleView.swift in Sources */,
 				0E74AC5128617F6A00EE4494 /* DebugPrinter.swift in Sources */,
+				41B04BE82BDA5401003F9960 /* PopToRootView.swift in Sources */,
 				0E99C37729401DEA00E1D3AB /* CustomFormatStyleView.swift in Sources */,
 				417A16E42BBE7FCD000D256E /* SecureScreenShotView.swift in Sources */,
 				0E8218E127BC8B39008EFA9E /* Buttons.swift in Sources */,
